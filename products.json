@@ -1,0 +1,194 @@
+[
+	{
+		"name": "INVICTUS VICTORY ELIXIR",
+		"description": "200 ml",
+		"category": "Masculinos",
+		"price_full": "3450",
+		"price_5ml": "235",
+		"price_10ml": "455",
+		"image": "images/8e716f66-6dd5-4005-8fca-5d071a2ebe6e.jpeg"
+	},
+	{
+		"name": "VALENTINO UOMO INTENSE",
+		"description": "100 ml",
+		"category": "Masculinos",
+		"price_full": "3450",
+		"price_5ml": "235",
+		"price_10ml": "455",
+		"image": "images/b5b4f2ab-aba3-4096-b81b-b1ce1904785d.jpg"
+	},
+	{
+		"name": "BAD BOY EXTREME",
+		"description": "100 ml",
+		"category": "Masculinos",
+		"price_full": "3450",
+		"price_5ml": "235",
+		"price_10ml": "455",
+		"image": "images/perfume-carolina-herrera-bad-boy-extreme-edp-m-100-ml-1-prive-perfumes.webp"
+	},
+	{
+		"name": "EMPORIO ARMANI STRONGER WITH YOU INTENSELY",
+		"description": "100 ml",
+		"category": "Masculinos",
+		"price_full": "3680",
+		"price_5ml": "255",
+		"price_10ml": "495",
+		"image": "images/a06a8b88-28db-4223-ae3f-1443ec83c21f.jpg"
+	},
+	{
+		"name": "VERSACE EROS FLAME",
+		"description": "100 ml",
+		"category": "Masculinos",
+		"price_full": "2399",
+		"price_5ml": "225",
+		"price_10ml": "435",
+		"image": "images/perfume-versace-eros-flame-edp-m-100-ml-4-prive-perfumes_c9fa6fb2.webp"
+	},
+    {
+		"name": "212 MEN NYC EDT",
+		"description": "100 ml",
+		"category": "Masculinos",
+		"price_full": "2875",
+		"price_5ml": "195",
+		"price_10ml": "375",
+		"image": "images/3935fda1-6355-4a9d-88d1-b613ec3ab6f9.jpg"
+	},
+    {
+		"name": "SAUVAGE DIOR EDP",
+		"description": "100 ml",
+		"category": "Masculinos",
+		"price_full": "4813",
+		"price_5ml": "225",
+		"price_10ml": "435",
+		"image": "images/baf1bac3-7726-4198-8f50-dce80bf5d9fa.jpg"
+	},
+	{
+		"name": "ACQUA DI GIO PROFONDO EDP",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "3680",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/18dc56ad-4808-4cad-8373-1a861c9bcc4e.jpg"
+	},
+	{
+		"name": "RALPH LAUREN POLO RED PARFUM",
+		"category": "Masculinos",
+		"description": "125ML",
+		"price_full": "2990",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/299b3194-50f0-4f33-b94e-30ff08ff4a99.jpeg"
+	},
+	{
+		"name": "D&G LIGHT BLUE SUMMER VIBES",
+		"category": "Masculinos",
+		"description": "75 ml",
+		"price_full": "2499",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/494483f1-aad5-4665-91e3-8689c3b89469.jpeg"
+	},
+	{
+		"name": "CAROLINA HERRERA BAD BOY COBALT EDP",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "3220",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/554a23f9-099d-4917-88ba-71976e1d657a.jpg"
+	},
+	{
+		"name": "CAROLINA HERRERA BAD BOY ELIXIR EDP",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "4025",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/d26f05cd-96e6-4b36-96ba-a3eedd53026b.jpg"
+	},
+	{
+		"name": "ODYSSEY HOMME EDP",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "1820",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/d575629d-c6e5-40b6-8f5a-7ac736aad614.jpeg"
+	},
+    {
+		"name": "ODYSSEY MANDARIN SKY EDP",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "1995",
+		"price_5ml": "195",
+		"price_10ml": "375",
+		"image": "images/Armaf-Odyssey-Mandarin-Sky-100ml-Eau-de-Parfum-EDP.webp"
+	},
+    {
+		"name": "Nautica Classic EDT ",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "1820",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": ""
+	},
+    {
+		"name": "SALVO INTENSE ",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": ""
+	},{
+		"name": "Blue Seduction EDT",
+		"category": "Masculinos",
+		"description": "100 ml",
+		"price_full": "1820",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": "images/d575629d-c6e5-40b6-8f5a-7ac736aad614.jpeg"
+	},
+
+{
+		"name": "TOMMY HILFIGER GIRL EDT",
+		"category": "Femeninos",
+		"description": "100 ml",
+		"price_full": "1325",
+		"price_5ml": "145",
+		"price_10ml": "275",
+		"image": "images/tommy-hilfiger-girl-uni.jpg"
+	},
+
+	{
+		"name": "COLD WATER WOMEN",
+		"category": "Femeninos",
+		"description": "100 ml",
+		"price_full": "1325",
+		"price_5ml": "145",
+		"price_10ml": "275",
+		"image": "images/c8e339fd-7b47-45ab-b45f-6fca2bf0095e.jpg"
+	},
+
+{
+		"name": "",
+		"category": "Femeninos",
+		"description": "100 ml",
+		"price_full": "",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": ""
+	},{
+		"name": "",
+		"category": "Femeninos",
+		"description": "100 ml",
+		"price_full": "",
+		"price_5ml": "",
+		"price_10ml": "",
+		"image": ""
+	}
+    
+
+]

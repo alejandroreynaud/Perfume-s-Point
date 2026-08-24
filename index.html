@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfume's Point | Perfumes y Decants</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+
+        <div class="logo">
+            PERFUME <span>POINT</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#decants">Decants</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        
+        <button id="cart-button" class="cart-button" aria-label="Abrir carrito">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- PORTADA -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">TU FRAGANCIA, TU ESTILO</p>
+
+            <h1>
+                Encuentra tu<br>
+                próxima <span>fragancia</span>
+            </h1>
+
+            <p class="hero-text">
+                Descubre perfumes y fragancias originales
+                y decants de 5 ml y 10 ml.
+            </p>
+
+            <a href="#catalogo" class="button">
+                VER CATÁLOGO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORÍAS -->
+    <section class="categories">
+
+        <div class="section-title">
+            <p>DESCUBRE</p>
+            <h2>Elige tu fragancia</h2>
+        </div>
+
+        <div class="category-container">
+
+                <div class="category-card" data-category="Masculinos">
+                    <div class="category-image">
+                        <img src="images/los-mejores-perfumes-de-oton-o-para-hombre-esquire-1604414321.avif" alt="Masculinos">
+                    </div>
+                    <div class="category-info">
+                        <h3>Masculinos</h3>
+                        <p>Fragancias para hombres</p>
+                        <a href="#catalogo">Ver perfumes</a>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="Femeninos">
+                    <div class="category-image">
+                        <img src="images/rp-perfumes-280325-22415-c2101-r2164935-1-6853f67f10736.jpg" alt="Femeninos">
+                    </div>
+                    <div class="category-info">
+                        <h3>Femeninos</h3>
+                        <p>Fragancias para mujeres</p>
+                        <a href="#catalogo">Ver perfumes</a>
+                    </div>
+                </div>
+
+            <!-- categoría 'Árabes' eliminada según solicitud -->
+
+        </div>
+
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="catalog">
+
+        <div class="section-title">
+            <p>NUESTROS FAVORITOS</p>
+            <h2>Perfumes Destacados</h2>
+        </div>
+
+        <div id="catalog-filter" class="catalog-filter">
+            <button class="filter-btn" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="Masculinos">Masculinos</button>
+            <button class="filter-btn" data-filter="Femeninos">Femeninos</button>
+        </div>
+
+        <div id="products-container" class="products-container">
+
+            <!-- Los productos los agregaremos después con JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- DECANTS -->
+    <section id="decants" class="decants">
+
+        <div class="decants-content">
+
+            <p class="subtitle">PRUEBA ANTES DE COMPRAR</p>
+
+            <h2>
+                Lleva tu perfume<br>
+                en <span>5 ml o 10 ml</span>
+            </h2>
+
+            <p>
+                ¿Quieres conocer una fragancia antes de comprar
+                el frasco completo? Prueba nuestros decants.
+            </p>
+
+            <a href="#contacto" class="button">
+                QUIERO MI DECANT
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- POR QUÉ PERFUME POINT -->
+    <section class="benefits">
+
+        <div class="section-title">
+            <p>PERFUME POINT</p>
+            <h2>¿Por qué nosotros?</h2>
+        </div>
+
+        <div class="benefits-container">
+
+            <div class="benefit">
+                <div class="benefit-icon">✦</div>
+                <h3>Variedad</h3>
+                <p>
+                    Perfumes originales y fragancias árabes
+                    para diferentes estilos.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">5</div>
+                <h3>Decants</h3>
+                <p>
+                    Prueba tus fragancias favoritas en
+                    presentaciones de 5 ml y 10 ml.
+                </p>
+            </div>
+
+            <div class="benefit">
+                <div class="benefit-icon">✓</div>
+                <h3>Atención</h3>
+                <p>
+                    Realiza tu pedido fácilmente y recibe
+                    atención personalizada.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+
+        <div class="contact-content">
+
+            <p class="subtitle">¿ENCONTRASTE TU FRAGANCIA?</p>
+
+            <h2>
+                Haz tu pedido!
+            </h2>
+
+            <p>
+                Escríbenos por WhatsApp y te ayudaremos
+                a encontrar el perfume ideal para ti.
+            </p>
+
+            <a
+                href="https://wa.me/"
+                target="_blank"
+                class="whatsapp-button"
+            >
+                💬 PEDIR POR WHATSAPP
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            PERFUME <span>POINT</span>
+        </div>
+
+        <p>
+            Perfumes que dejan huella.
+        </p>
+
+        <p class="copyright">
+            © 2026 Perfume Point. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <!-- CARRITO (modal) -->
+    <div id="cart-modal" class="cart-modal" aria-hidden="true">
+        <div class="cart-content">
+            <button id="close-cart" class="cart-close" aria-label="Cerrar carrito">✕</button>
+            <h2>Tu carrito</h2>
+
+            <div id="cart-items" class="cart-items">
+                <!-- items dinámicos -->
+            </div>
+
+            <div class="cart-summary">
+                <div>Total: <span id="cart-total">L. 0</span></div>
+                <button id="checkout-button" class="checkout-button">Comprar por WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Floating cart button -->
+    <button id="floating-cart" class="floating-cart" aria-label="Abrir carrito flotante">
+        🛒 <span id="floating-count">0</span>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

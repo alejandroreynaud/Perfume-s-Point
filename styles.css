@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 7% 80px 7%;
+
+    background:
+        radial-gradient(circle at 80% 40%, #3b3b3b, transparent 30%),
+        linear-gradient(120deg, #080808, #171717);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero .subtitle {
+    color: var(--muted, #cfcfcf);
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.hero h1 span,
+.decants h2 span {
+    font-weight: normal;
+}
+
+.hero-text {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.75;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.button,
+.whatsapp-button {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    border: 1px solid #ffffff;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.button:hover,
+.whatsapp-button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+section {
+    padding: 100px 7%;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.catalog-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.catalog-filter .filter-btn {
+    padding: 8px 12px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: transparent;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.catalog-filter .filter-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.section-title p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categories {
+    background: #111111;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.category-card {
+    min-height: 260px;
+    display: flex;
+    gap: 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.category-image {
+    width: 40%;
+    min-width: 140px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.category-info {
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.category-info h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.category-info p {
+    opacity: 0.75;
+    margin: 0;
+}
+
+.category-info a {
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CATÁLOGO
+========================= */
+
+.catalog {
+    background: #0b0b0b;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.product-card {
+    background: linear-gradient(180deg, #111111, #121212);
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.product-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(180deg, #181818, #101010);
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.product-info {
+    padding: 20px 22px 26px 22px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+}
+
+
+/* =========================
+   DECANTS
+========================= */
+
+.decants {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #111111,
+            #202020
+        );
+}
+
+.decants-content {
+    max-width: 650px;
+}
+
+.decants h2 {
+    font-size: clamp(45px, 7vw, 80px);
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.decants p:not(.subtitle) {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.benefits {
+    background: #111111;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit {
+    padding: 30px 0;
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #555;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+.benefit h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.benefit p {
+    line-height: 1.6;
+    opacity: 0.6;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact {
+    text-align: center;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #080808;
+}
+
+.contact-content {
+    max-width: 650px;
+}
+
+.contact h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.contact p:not(.subtitle) {
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.whatsapp-button {
+    border-color: #ffffff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 50px 7%;
+    text-align: center;
+
+    border-top: 1px solid #222;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .products-container { grid-template-columns: repeat(2, 1fr); }
+    .category-container { grid-template-columns: 1fr 1fr; }
+    .hero { padding: 100px 6% 60px 6%; }
+}
+
+@media (max-width: 600px) {
+    .products-container { grid-template-columns: 1fr; }
+    .category-container { grid-template-columns: 1fr; }
+    .navbar { padding: 14px 6%; }
+    .hero h1 { font-size: 36px; }
+    .product-image { height: 180px; }
+    .category-image { display: block; width: 100%; height: 160px; }
+    .category-card { flex-direction: column; }
+}
+
+footer p {
+    opacity: 0.5;
+    margin-top: 12px;
+}
+
+footer .copyright {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   CARRITO
+========================= */
+
+.cart-button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* asegurar visibilidad del cart-button en móviles */
+@media (max-width: 768px) {
+    .cart-button { display: inline-flex; }
+}
+
+/* estilo para botón aceptar pequeño */
+.accept-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.04);
+    margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    .accept-btn { width: 100%; margin-left: 0; margin-top: 8px; }
+}
+
+.cart-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 50;
+}
+
+.cart-modal[aria-hidden="false"] {
+    display: flex;
+}
+
+.cart-content {
+    width: 420px;
+    max-width: 95%;
+    background: #0f0f0f;
+    border: 1px solid #222;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.cart-close {
+    background: transparent;
+    border: none;
+    color: #fff;
+    float: right;
+    font-size: 20px;
+}
+
+.cart-items {
+    max-height: 300px;
+    overflow: auto;
+    margin: 12px 0 18px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.cart-item .info {
+    flex: 1;
+}
+
+.qty-controls {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: #ff6b6b;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 12px 18px;
+    background: #25D366;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Floating cart */
+.floating-cart {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background: #ffffff;
+    color: #000;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    gap: 8px;
+    z-index: 60;
+}
+
+.floating-cart.show {
+    display: inline-flex;
+}
+
+.floating-cart span {
+    font-weight: 700;
+}
+
+/* Toasts */
+.toast-container {
+    position: fixed;
+    right: 18px;
+    top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 70;
+}
+
+.toast {
+    background: rgba(255,255,255,0.95);
+    color: #000;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .hero {
+        padding: 120px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .category-container,
+    .products-container,
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .contact h2 {
+        font-size: 45px;
+    }
+
+}
+
+/* presentación select y botón agregar más grandes */
+.presentation-select {
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: #0f0f0f;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.presentation-select option {
+    /* Some browsers render native white backgrounds for option lists;
+       set option text color to dark to ensure readability in that case. */
+    color: #000;
+    background: #fff;
+}
+
+.button.add-btn {
+    padding: 12px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* En móviles, que el select y botón ocupen todo el ancho y se apilen */
+@media (max-width: 600px) {
+    .product-info { gap: 10px; }
+    .presentation-select, .button.add-btn {
+        width: 100%;
+        display: block;
+    }
+}
