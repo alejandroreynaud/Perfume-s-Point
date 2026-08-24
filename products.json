@@ -255,7 +255,7 @@
         "name":  "CHANEL No 5 100ML EDP ",
         "category":  "Femeninos",
         "description":  "100 ml",
-        "price_full":  "",
+        "price_full":  "6670",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  ""
@@ -264,7 +264,7 @@
         "name":  "CHANEL CHANCE EAU FRAICHE EDP",
         "category":  "Femeninos",
         "description":  "100 ml",
-        "price_full":  "6670",
+        "price_full":  "6380",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/9ca918f9-2b81-4df1-9772-d3a8e37849e8.jpg"
@@ -297,13 +297,31 @@
         "image":  "images/CH GOOD GIRL JASMINE ABSOLUTE EDP 50ML.jpg"
     },
     {
-        "name":  " ",
+        "name":  "J.P.G.BELLE P.GARDEN EDP ",
         "category":  "Femeninos",
-        "description":  " ",
-        "price_full":  "",
+        "description":  "100 ml",
+        "price_full":  "3450",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  ""
+        "image":  "images/J.P.G.BELLE P.GARDEN 100ML EDP.jpg"
+    },
+    {
+        "name":  "BURBERRY HER EDP INTENSE",
+        "category":  "Femeninos",
+        "description":  "100 ml",
+        "price_full":  "4025",
+        "price_5ml":  "",
+        "price_10ml":  "",
+        "image":  "images/BURBERRY HER EDP INTENSE 100ML.jpg"
+    },
+    {
+        "name":  "BURBERRY BRIT EDP",
+        "category":  "Femeninos",
+        "description":  "100 ml",
+        "price_full":  "2500",
+        "price_5ml":  "",
+        "price_10ml":  "",
+        "image":  "images/BURBERRY BRIT 100ml EDP.jpg"
     },
 	 {
         "name":  "TOMMY HILFIGER GIRL EDT",
@@ -322,6 +340,15 @@
         "price_5ml":  "145",
         "price_10ml":  "275",
         "image":  "images/c8e339fd-7b47-45ab-b45f-6fca2bf0095e.jpg"
+    },
+    {
+        "name":  "",
+        "category":  "Femeninos",
+        "description":  "100 ml",
+        "price_full":  "",
+        "price_5ml":  "",
+        "price_10ml":  "",
+        "image":  ""
     }
 
 ]
