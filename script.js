@@ -38,15 +38,14 @@ function renderProducts() {
                 <p>${product.description || ''}</p>
                 <div class="product-price">Precio frasco: ${priceFull ? formatPriceText(priceFull) : '—'}</div>
                 <div style="margin-top:8px;opacity:0.85;">5 ml: ${price5 ? formatPriceText(price5) : '—'} · 10 ml: ${price10 ? formatPriceText(price10) : '—'}</div>
-                <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
-                    <select class="presentation-select" data-index="${index}">
-                        <option value="full" data-price="${priceFull}">Frasco completo — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
-                        <option value="5ml" data-price="${price5}">5 ml — ${price5 ? formatPriceText(price5) : '—'}</option>
-                        <option value="10ml" data-price="${price10}">10 ml — ${price10 ? formatPriceText(price10) : '—'}</option>
-                    </select>
-                        <button class="button add-btn" data-index="${index}">AGREGAR</button>
-                        <button class="accept-btn" data-index="${index}">Aceptar</button>
-                </div>
+                        <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
+                            <select class="presentation-select" data-index="${index}">
+                                <option value="full" data-price="${priceFull}">Frasco completo — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
+                                <option value="5ml" data-price="${price5}">5 ml — ${price5 ? formatPriceText(price5) : '—'}</option>
+                                <option value="10ml" data-price="${price10}">10 ml — ${price10 ? formatPriceText(price10) : '—'}</option>
+                            </select>
+                            <button class="button add-btn" data-index="${index}">AGREGAR</button>
+                        </div>
             </div>
         `;
         productsContainer.appendChild(card);
@@ -151,15 +150,7 @@ productsContainer.addEventListener('click', (e) => {
 });
 
 // Delegación para el botón Aceptar: confirma selección y muestra feedback breve
-productsContainer.addEventListener('click', (e) => {
-    const acc = e.target.closest('.accept-btn');
-    if (!acc) return;
-    const index = parseInt(acc.dataset.index, 10);
-    const select = document.querySelector(`.presentation-select[data-index="${index}"]`);
-    const opt = select.options[select.selectedIndex];
-    const presentation = opt.value;
-    showToast(`Seleccionado: ${presentation}`);
-});
+// (el botón 'Aceptar' fue eliminado; la selección se confirma al agregar al carrito)
 
 // Carrito (modal)
 const cartButton = document.getElementById('cart-button');
@@ -208,11 +199,12 @@ document.getElementById('checkout-button').addEventListener('click', () => {
 
     cart.forEach(item => {
         const prod = products[item.index];
-        total += item.price * item.qty;
-        message += `- ${item.qty} x ${prod.name} (${item.presentation}) — L. ${item.price}%0A`;
+        const linePrice = Math.round(item.price);
+        total += linePrice * item.qty;
+        message += `- ${item.qty} x ${prod.name} (${item.presentation}) — L. ${linePrice}%0A`;
     });
 
-    message += `%0ATotal: L. ${total}%0A%0ADatos de entrega (nombre, dirección, teléfono): `;
+    message += `%0ATotal: L. ${Math.round(total)}`;
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

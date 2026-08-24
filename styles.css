@@ -499,19 +499,7 @@ footer .copyright {
 }
 
 /* estilo para botón aceptar pequeño */
-.accept-btn {
-    padding: 10px 12px;
-    font-size: 14px;
-    border-radius: 8px;
-    background: rgba(255,255,255,0.06);
-    color: #fff;
-    border: 1px solid rgba(255,255,255,0.04);
-    margin-left: 8px;
-}
-
-@media (max-width: 600px) {
-    .accept-btn { width: 100%; margin-left: 0; margin-top: 8px; }
-}
+/* accept-btn removed - no longer used */
 
 .cart-modal {
     position: fixed;
