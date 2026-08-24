@@ -15,7 +15,7 @@ function formatPriceVal(v) {
 }
 
 function formatPriceText(n) {
-    return `L. ${n}`;
+    return `L. ${Number(n).toLocaleString('en-US')}`;
 }
 
 function renderProducts() {
@@ -253,10 +253,10 @@ document.getElementById('checkout-button').addEventListener('click', () => {
         const prod = products[item.index];
         const linePrice = Math.round(item.price);
         total += linePrice * item.qty;
-        message += `- ${item.qty} x ${prod.name} (${item.presentation}) — L. ${linePrice}%0A`;
+        message += `- ${item.qty} x ${prod.name} (${item.presentation}) — ${formatPriceText(linePrice)}%0A`;
     });
 
-    message += `%0ATotal: L. ${Math.round(total)}`;
+    message += `%0ATotal: ${formatPriceText(Math.round(total))}`;
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
