@@ -36,8 +36,8 @@ function renderProducts() {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>${product.description || ''}</p>
-                <div class="product-price">Precio frasco: ${priceFull ? formatPriceText(priceFull) : '—'}</div>
-                <div style="margin-top:8px;opacity:0.85;">5 ml: ${price5 ? formatPriceText(price5) : '—'} · 10 ml: ${price10 ? formatPriceText(price10) : '—'}</div>
+                <div class="product-price">Presentaciones disponibles:</div>
+                <div class="presentations-labels">5 ml <span>·</span> 10 ml</div>
                         <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
                             <select class="presentation-select" data-index="${index}">
                                 <option value="full" data-price="${priceFull}">Frasco completo — ${priceFull ? formatPriceText(priceFull) : '—'}</option>

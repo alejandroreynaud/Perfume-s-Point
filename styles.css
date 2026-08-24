@@ -315,6 +315,16 @@ section {
     font-weight: bold;
 }
 
+.presentations-labels {
+    margin-top: 8px;
+    opacity: 0.85;
+}
+
+.presentations-labels span {
+    margin: 0 6px;
+    opacity: 0.6;
+}
+
 .product-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.7);
