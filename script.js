@@ -24,7 +24,9 @@ function renderProducts() {
             if (!product.category || product.category !== currentFilter) return;
         }
 
-        const imgHtml = product.image ? `<img src="${product.image}" alt="${product.name}" style="width:100%;height:200px;object-fit:cover;">` : '🧴';
+        const imgHtml = product.image
+            ? `<button class="image-preview-btn" type="button" data-image="${product.image}" data-name="${product.name}"><img src="${product.image}" alt="Ver foto de ${product.name}" class="product-img"></button>`
+            : '🧴';
         const priceFull = product.price_full_num ?? formatPriceVal(product.price_full ?? product.price);
         const price5 = product.price_5ml_num ?? formatPriceVal(product.price_5ml);
         const price10 = product.price_10ml_num ?? formatPriceVal(product.price_10ml);
@@ -138,6 +140,12 @@ function removeByKey(key) {
 
 // Delegación: agregar desde productos
 productsContainer.addEventListener('click', (e) => {
+    const previewButton = e.target.closest('.image-preview-btn');
+    if (previewButton) {
+        openImagePreview(previewButton.dataset.image, previewButton.dataset.name);
+        return;
+    }
+
     const btn = e.target.closest('.add-btn');
     if (!btn) return;
     const index = parseInt(btn.dataset.index, 10);
@@ -147,6 +155,32 @@ productsContainer.addEventListener('click', (e) => {
     const price = formatPriceVal(opt.dataset.price || opt.getAttribute('data-price'));
     if (!price) return alert('Precio no disponible para la presentación seleccionada.');
     addToCart(index, presentation, price);
+});
+
+// Vista ampliada de cada perfume sin salir de la página
+const imageModal = document.getElementById('image-modal');
+const previewImage = document.getElementById('preview-image');
+const previewName = document.getElementById('preview-name');
+const closeImageModal = document.getElementById('close-image-modal');
+
+function openImagePreview(image, name) {
+    previewImage.src = image;
+    previewImage.alt = name;
+    previewName.textContent = name;
+    imageModal.setAttribute('aria-hidden', 'false');
+}
+
+function closePreview() {
+    imageModal.setAttribute('aria-hidden', 'true');
+    previewImage.src = '';
+}
+
+closeImageModal.addEventListener('click', closePreview);
+imageModal.addEventListener('click', (e) => {
+    if (e.target === imageModal) closePreview();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePreview();
 });
 
 // Delegación para el botón Aceptar: confirma selección y muestra feedback breve
