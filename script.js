@@ -25,7 +25,7 @@ function renderProducts() {
         }
 
         const imgHtml = product.image
-            ? `<button class="image-preview-btn" type="button" data-image="${product.image}" data-name="${product.name}"><img src="${product.image}" alt="Ver foto de ${product.name}" class="product-img"></button>`
+            ? `<button class="image-preview-btn" type="button" data-image="${product.image}" data-name="${product.name}"><img src="${product.image}" alt="Ver foto de ${product.name}" class="product-img"><span class="image-preview-label">Ver foto completa</span></button>`
             : '🧴';
         const priceFull = product.price_full_num ?? formatPriceVal(product.price_full ?? product.price);
         const price5 = product.price_5ml_num ?? formatPriceVal(product.price_5ml);
