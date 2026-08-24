@@ -110,6 +110,18 @@
             <button class="filter-btn" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="Masculinos">Masculinos</button>
             <button class="filter-btn" data-filter="Femeninos">Femeninos</button>
+            <label class="catalog-search">
+                <span>Buscar</span>
+                <input id="product-search" type="search" placeholder="Buscar perfume..." autocomplete="off">
+            </label>
+            <label class="catalog-sort">
+                <span>Ordenar</span>
+                <select id="price-sort">
+                    <option value="default">Orden original</option>
+                    <option value="high-low">Precio: mayor a menor</option>
+                    <option value="low-high">Precio: menor a mayor</option>
+                </select>
+            </label>
         </div>
 
         <div id="products-container" class="products-container">

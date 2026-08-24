@@ -4,6 +4,8 @@ let products = [];
 const productsContainer = document.getElementById('products-container');
 let cart = [];
 let currentFilter = 'all';
+let searchTerm = '';
+let priceSort = 'default';
 
 function formatPriceVal(v) {
     if (v == null) return 0;
@@ -18,11 +20,23 @@ function formatPriceText(n) {
 
 function renderProducts() {
     productsContainer.innerHTML = '';
-    products.forEach((product, index) => {
-        // Filtrar por categoría: si hay filtro distinto de 'all', mostrar sólo si la categoría coincide
-        if (currentFilter !== 'all') {
-            if (!product.category || product.category !== currentFilter) return;
-        }
+    const visibleProducts = products
+        .map((product, index) => ({ product, index }))
+        .filter(({ product }) => {
+            const matchesCategory = currentFilter === 'all' || product.category === currentFilter;
+            const searchableText = `${product.name || ''} ${product.description || ''}`.toLowerCase();
+            return matchesCategory && searchableText.includes(searchTerm);
+        });
+
+    if (priceSort !== 'default') {
+        visibleProducts.sort((a, b) => {
+            const priceA = formatPriceVal(a.product.price_full);
+            const priceB = formatPriceVal(b.product.price_full);
+            return priceSort === 'high-low' ? priceB - priceA : priceA - priceB;
+        });
+    }
+
+    visibleProducts.forEach(({ product, index }) => {
 
         const imgHtml = product.image
             ? `<button class="image-preview-btn" type="button" data-image="${product.image}" data-name="${product.name}"><img src="${product.image}" alt="Ver foto de ${product.name}" class="product-img"><span class="image-preview-label">Ver foto completa</span></button>`
@@ -52,6 +66,10 @@ function renderProducts() {
         `;
         productsContainer.appendChild(card);
     });
+
+    if (visibleProducts.length === 0) {
+        productsContainer.innerHTML = '<p class="no-results">No encontramos perfumes con esos criterios.</p>';
+    }
 }
 
 function updateCartCount() {
@@ -260,6 +278,16 @@ async function init() {
         b.addEventListener('click', () => {
             setFilter(b.dataset.filter);
         });
+    });
+
+    document.getElementById('product-search').addEventListener('input', (event) => {
+        searchTerm = event.target.value.trim().toLowerCase();
+        renderProducts();
+    });
+
+    document.getElementById('price-sort').addEventListener('change', (event) => {
+        priceSort = event.target.value;
+        renderProducts();
     });
 
     // Click en tarjetas de categoría para filtrar
