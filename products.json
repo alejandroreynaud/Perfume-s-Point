@@ -240,7 +240,7 @@
         "price_full":  "3690",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/PRADA LUNA ROSSA OCEAN 100ML EDP.jpg"
+        "image":  "images/PRADA LUNA ROSSA OCEAN 100ML EDP.jpeg"
     },
     {
         "name":  "PRADA LUNA ROSSA BLACK EDP",
@@ -249,7 +249,7 @@
         "price_full":  "3490",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/PRADA LUNA ROSSA BLACK 100ML EDP.jpg"
+        "image":  "images/PRADA LUNA ROSSA BLACK 100ML EDP.jpeg"
     },
     {
         "name":  "CHANEL No 5 100ML EDP ",
@@ -384,7 +384,7 @@
         "price_full":  "2340",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/SIGNORINA MISTERIOSA 3P SET.jpg"
+        "image":  "images/SIGNORINA MISTERIOSA 3P.jpg"
     },
     {
         "name":  "212 MEN NYC",
@@ -420,7 +420,7 @@
         "price_full":  "3969",
         "price_5ml":  "255",
         "price_10ml":  "495",
-        "image":  "images/PACO RABANNE ONE MILLION PARFUM 100ML.jpg"
+        "image":  "images/PACO RABANNE ONE MILLION PARFUM 100 ml..jpg"
     },
     {
         "name":  "PACO RABANNE ONE MILLION PARFUM INTENSE ELIXIR",
@@ -438,7 +438,7 @@
         "price_full":  "1565",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/PERRY ELLIS AQUA EXTREME EDT 100ML.jpg"
+        "image":  "images/PERRY ELLIS - AQUA EXTREME 100ML.jpg"
     },
     {
         "name":  "HUGO GREEN EDT",
@@ -447,7 +447,7 @@
         "price_full":  "2345",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/HUGO GREEN EDT 125ML.jpg"
+        "image":  "images/HUGO GREEN 125ml EDT.jpg"
     },
     {
         "name":  "DOLCE & GABBANA POUR HOMME EDT",
@@ -456,7 +456,7 @@
         "price_full":  "2480",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/DOLCE & GABBANA POUR HOMME EDT 125ML.jpg"
+        "image":  "images/DOLCE & GABBANA 125ML M EDT.jpg"
     },
     {
         "name":  "CH MEN SPORT EDT",
