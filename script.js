@@ -6,12 +6,19 @@ let cart = [];
 let currentFilter = 'all';
 let searchTerm = '';
 let priceSort = 'default';
+let decantFilter = 'all';
 
 function formatPriceVal(v) {
     if (v == null) return 0;
     if (typeof v === 'number') return v;
-    const n = parseFloat(String(v).replace(/[^0-9.,]/g, '').replace(',', '.')) || 0;
-    return n;
+    const value = String(v).trim().replace(/[^0-9.,-]/g, '');
+    if (!value) return 0;
+
+    // Coma entre miles: 1,000 / 1,000.50. Punto decimal: 1000.50.
+    const normalized = value.includes(',')
+        ? value.replace(/,/g, '')
+        : value;
+    return parseFloat(normalized) || 0;
 }
 
 function formatPriceText(n) {
@@ -25,7 +32,13 @@ function renderProducts() {
         .filter(({ product }) => {
             const matchesCategory = currentFilter === 'all' || product.category === currentFilter;
             const searchableText = `${product.name || ''} ${product.description || ''}`.toLowerCase();
-            return matchesCategory && searchableText.includes(searchTerm);
+            const has5ml = formatPriceVal(product.price_5ml) > 0;
+            const has10ml = formatPriceVal(product.price_10ml) > 0;
+            const hasDecant = decantFilter === 'all'
+                || (decantFilter === 'available' && (has5ml || has10ml))
+                || (decantFilter === '5ml' && has5ml)
+                || (decantFilter === '10ml' && has10ml);
+            return matchesCategory && searchableText.includes(searchTerm) && hasDecant;
         });
 
     if (priceSort !== 'default') {
@@ -300,6 +313,11 @@ async function init() {
 
     document.getElementById('price-sort').addEventListener('change', (event) => {
         priceSort = event.target.value;
+        renderProducts();
+    });
+
+    document.getElementById('decant-filter').addEventListener('change', (event) => {
+        decantFilter = event.target.value;
         renderProducts();
     });
 

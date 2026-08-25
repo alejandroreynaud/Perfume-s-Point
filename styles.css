@@ -176,7 +176,8 @@ section {
 }
 
 .catalog-search,
-.catalog-sort {
+.catalog-sort,
+.catalog-decants {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -184,7 +185,8 @@ section {
 }
 
 .catalog-search span,
-.catalog-sort span {
+.catalog-sort span,
+.catalog-decants span {
     font-size: 11px;
     letter-spacing: 1px;
     opacity: 0.65;
@@ -192,7 +194,8 @@ section {
 }
 
 .catalog-search input,
-.catalog-sort select {
+.catalog-sort select,
+.catalog-decants select {
     min-height: 36px;
     padding: 8px 12px;
     border: 1px solid rgba(255,255,255,0.12);
@@ -207,6 +210,11 @@ section {
 }
 
 .catalog-sort select option {
+    background: #fff;
+    color: #000;
+}
+
+.catalog-decants select option {
     background: #fff;
     color: #000;
 }
@@ -569,8 +577,8 @@ footer {
     .category-image { display: block; width: 100%; height: 160px; }
     .category-card { flex-direction: column; }
     .catalog-filter { align-items: stretch; }
-    .catalog-search, .catalog-sort { width: 100%; margin-left: 0; }
-    .catalog-search input, .catalog-sort select { width: 100%; }
+    .catalog-search, .catalog-sort, .catalog-decants { width: 100%; margin-left: 0; }
+    .catalog-search input, .catalog-sort select, .catalog-decants select { width: 100%; }
 }
 
 footer p {

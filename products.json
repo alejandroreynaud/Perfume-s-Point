@@ -173,8 +173,8 @@
     {
         "name":  "DAVID OFF COOL WATER MEN EDT",
         "category":  "Masculinos",
-        "description":  "100 ml",
-        "price_full":  "",
+        "description":  "125 ml",
+        "price_full":  "1339",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/2d552e73-4f28-4d2f-9d70-dfcf131a3336.jpg"
@@ -363,19 +363,19 @@
         "name":  "C.H VERY GOOD GIRL EDP",
         "category":  "Femeninos",
         "description":  "75 ml",
-        "price_full":  "3,999",
+        "price_full":  "3999",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  ""
+        "image":  "images/VERY GOOD GIRL 75ml EDP.jpg"
     },
     {
-        "name":  "",
+        "name":  "VALENTINO BORN IN ROMA EDP WOMAN",
         "category":  "Femeninos",
-        "description":  "125 ml",
-        "price_full":  "3910",
+        "description":  "100 ml",
+        "price_full":  "",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  ""
+        "image":  " "
     }
 
 ]
