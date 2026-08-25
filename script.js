@@ -54,9 +54,10 @@ function renderProducts() {
                 <p>${product.description || ''}</p>
                 <div class="product-price">Presentaciones disponibles:</div>
                 <div class="presentations-labels">5 ml <span>·</span> 10 ml</div>
+                <div class="selected-price">Precio sellado: ${priceFull ? formatPriceText(priceFull) : 'No disponible'}</div>
                         <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
                             <select class="presentation-select" data-index="${index}">
-                                <option value="full" data-price="${priceFull}">Frasco completo — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
+                                <option value="full" data-price="${priceFull}">Sellado — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
                                 <option value="5ml" data-price="${price5}">5 ml — ${price5 ? formatPriceText(price5) : '—'}</option>
                                 <option value="10ml" data-price="${price10}">10 ml — ${price10 ? formatPriceText(price10) : '—'}</option>
                             </select>
@@ -173,6 +174,18 @@ productsContainer.addEventListener('click', (e) => {
     const price = formatPriceVal(opt.dataset.price || opt.getAttribute('data-price'));
     if (!price) return alert('Precio no disponible para la presentación seleccionada.');
     addToCart(index, presentation, price);
+});
+
+productsContainer.addEventListener('change', (e) => {
+    const select = e.target.closest('.presentation-select');
+    if (!select) return;
+    const option = select.options[select.selectedIndex];
+    const price = formatPriceVal(option.dataset.price);
+    const priceLabel = select.closest('.product-info').querySelector('.selected-price');
+    const presentationName = option.value === 'full' ? 'sellado' : option.value;
+    priceLabel.textContent = price
+        ? `Precio ${presentationName}: ${formatPriceText(price)}`
+        : `Precio ${presentationName}: No disponible`;
 });
 
 // Vista ampliada de cada perfume sin salir de la página
