@@ -68,7 +68,7 @@ function renderProducts() {
                 <div class="product-price">Presentaciones disponibles:</div>
                 <div class="presentations-labels">5 ml <span>·</span> 10 ml</div>
                 <div class="selected-price">Precio sellado: ${priceFull ? formatPriceText(priceFull) : 'No disponible'}</div>
-                        <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
+                        <div class="presentation-actions">
                             <select class="presentation-select" data-index="${index}">
                                 <option value="full" data-price="${priceFull}">Sellado — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
                                 <option value="5ml" data-price="${price5}">5 ml — ${price5 ? formatPriceText(price5) : '—'}</option>
