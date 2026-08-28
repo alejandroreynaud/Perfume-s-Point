@@ -67,7 +67,7 @@ function renderProducts() {
                 <p>${product.description || ''}</p>
                 <div class="product-price">Presentaciones disponibles:</div>
                 <div class="presentations-labels">5 ml <span>·</span> 10 ml</div>
-                <div class="price-instruction">💰 Precios 👇</div>
+                <div class="price-instruction">Precios 👇</div>
                         <div class="presentation-actions">
                             <select class="presentation-select" data-index="${index}">
                                 <option value="full" data-price="${priceFull}">Sellado — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
