@@ -201,7 +201,7 @@
         "name":  "PACO RABANNE INVICTUS EDT ",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "2760",
+        "price_full":  "2765",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/92d771ad-5f38-410e-9bf2-c57518fdec40.jpg"
@@ -219,7 +219,7 @@
         "name":  "FAHRENHEIT EDT 100ml",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "3450",
+        "price_full":  "3455",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/FAHRENHEIT EDT 100ml.jpg"
@@ -228,7 +228,7 @@
         "name":  "212 VIP BLACK ELIXIR ",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "3490",
+        "price_full":  "3495",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/212 VIP BLACK ELIXIR 100ML.jpg"
@@ -237,7 +237,7 @@
         "name":  "PRADA LUNA ROSSA OCEAN EDP",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "3690",
+        "price_full":  "3695",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/PRADA LUNA ROSSA OCEAN 100ML EDP.jpeg"
@@ -246,7 +246,7 @@
         "name":  "PRADA LUNA ROSSA BLACK EDP",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "3490",
+        "price_full":  "3495",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/PRADA LUNA ROSSA BLACK 100ML EDP.jpeg"
@@ -270,12 +270,12 @@
         "image":  "images/9ca918f9-2b81-4df1-9772-d3a8e37849e8.jpg"
     },
     {
-        "name":  "CAROLINA HERRERA GOOD GIRL BLUSH EDP ",
+        "name":  "CAROLINA HERRERA GOOD GIRL BLUSH EDP",
         "category":  "Femeninos",
         "description":  "80 ml",
-        "price_full":  "4255",
-        "price_5ml":  "",
-        "price_10ml":  "",
+        "price_full":  "4250",
+        "price_5ml":  "300",
+        "price_10ml":  "585",
         "image":  "images/GOOD GIRL BLUSH 80ML EDP.jpg"
     },
     {
@@ -511,6 +511,24 @@
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/AZZARO MOST WANTED INTENSE 100ML.jpg"
+    },
+    {
+        "name":  "LA BOMBA C.HERRERA EDP",
+        "category":  "Femeninos",
+        "description":  "80 ml",
+        "price_full":  "4515",
+        "price_5ml":  "325",
+        "price_10ml":  "635",
+        "image":  "images/LA BOMBA C.HERRERA 80ML EDP.jpeg"
+    },
+    {
+        "name":  "",
+        "category":  "Masculinos",
+        "description":  "100 ml",
+        "price_full":  "",
+        "price_5ml":  "",
+        "price_10ml":  "",
+        "image":  ""
     },
     {
         "name":  "",
