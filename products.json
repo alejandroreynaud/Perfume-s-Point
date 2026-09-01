@@ -4,8 +4,8 @@
         "description":  "200 ml",
         "category":  "Masculinos",
         "price_full":  "3450",
-        "price_5ml":  "140",
-        "price_10ml":  "265",
+        "price_5ml":  "160",
+        "price_10ml":  "305",
         "image":  "images/8e716f66-6dd5-4005-8fca-5d071a2ebe6e.jpeg"
     },
     {
@@ -13,8 +13,8 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "3450",
-        "price_5ml":  "225",
-        "price_10ml":  "435",
+        "price_5ml":  "250",
+        "price_10ml":  "485",
         "image":  "images/b5b4f2ab-aba3-4096-b81b-b1ce1904785d.jpg"
     },
     {
@@ -22,8 +22,8 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "3450",
-        "price_5ml":  "225",
-        "price_10ml":  "435",
+        "price_5ml":  "250",
+        "price_10ml":  "485",
         "image":  "images/perfume-carolina-herrera-bad-boy-extreme-edp-m-100-ml-1-prive-perfumes.webp"
     },
     {
@@ -31,8 +31,8 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "3680",
-        "price_5ml":  "230",
-        "price_10ml":  "445",
+        "price_5ml":  "255",
+        "price_10ml":  "495",
         "image":  "images/a06a8b88-28db-4223-ae3f-1443ec83c21f.jpg"
     },
     {
@@ -40,8 +40,8 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "2399",
-        "price_5ml":  "170",
-        "price_10ml":  "325",
+        "price_5ml":  "185",
+        "price_10ml":  "355",
         "image":  "images/perfume-versace-eros-flame-edp-m-100-ml-4-prive-perfumes_c9fa6fb2.webp"
     },
     {
@@ -49,8 +49,8 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "2875",
-        "price_5ml":  "195",
-        "price_10ml":  "375",
+        "price_5ml":  "210",
+        "price_10ml":  "405",
         "image":  "images/3935fda1-6355-4a9d-88d1-b613ec3ab6f9.jpg"
     },
     {
@@ -67,8 +67,8 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "5285",
-        "price_5ml":  "295",
-        "price_10ml":  "585",
+        "price_5ml":  "325",
+        "price_10ml":  "635",
         "image":  "images/baf1bac3-7726-4198-8f50-dce80bf5d9fa.jpg"
     },
     {
@@ -85,8 +85,8 @@
         "category":  "Masculinos",
         "description":  "125ML",
         "price_full":  "2990",
-        "price_5ml":  "170",
-        "price_10ml":  "325",
+        "price_5ml":  "190",
+        "price_10ml":  "365",
         "image":  "images/299b3194-50f0-4f33-b94e-30ff08ff4a99.jpeg"
     },
     {
@@ -94,8 +94,8 @@
         "category":  "Masculinos",
         "description":  "75 ml",
         "price_full":  "2499",
-        "price_5ml":  "185",
-        "price_10ml":  "355",
+        "price_5ml":  "220",
+        "price_10ml":  "425",
         "image":  "images/494483f1-aad5-4665-91e3-8689c3b89469.jpeg"
     },
     {
@@ -130,33 +130,33 @@
         "category":  "Masculinos",
         "description":  "100 ml",
         "price_full":  "1995",
-        "price_5ml":  "175",
-        "price_10ml":  "335",
+        "price_5ml":  "195",
+        "price_10ml":  "375",
         "image":  "images/Armaf-Odyssey-Mandarin-Sky-100ml-Eau-de-Parfum-EDP.webp"
     },
     {
         "name":  "NAUTICA CLASSIC EDT ",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "819",
-        "price_5ml":  "145",
-        "price_10ml":  "275",
+        "price_full":  "1250",
+        "price_5ml":  "135",
+        "price_10ml":  "255",
         "image":  "images/59d1f8b4-51ad-4e5b-8e42-0dcc38f75df1.jpg"
     },
     {
         "name":  "NAUTICA BLUE EDT ",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "819",
-        "price_5ml":  "145",
-        "price_10ml":  "275",
+        "price_full":  "1250",
+        "price_5ml":  "135",
+        "price_10ml":  "255",
         "image":  "images/nautica-blue-men-uni.jpg"
     },
     {
         "name":  "SALVO INTENSE",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "1199",
+        "price_full":  "1250",
         "price_5ml":  "135",
         "price_10ml":  "255",
         "image":  "images/SalvoIntense-e1731372734455.jpeg"
@@ -166,8 +166,8 @@
         "category":  "Masculinos",
         "description":  "100 ml",
         "price_full":  "1325",
-        "price_5ml":  "165",
-        "price_10ml":  "315",
+        "price_5ml":  "180",
+        "price_10ml":  "345",
         "image":  "images/perfume-banderas-blue-seduction-edt-m-100-ml-1-prive-perfumes.webp"
     },
     {
@@ -283,8 +283,8 @@
         "category":  "Femeninos",
         "description":  "80 ml",
         "price_full":  "4250",
-        "price_5ml":  "299",
-        "price_10ml":  "585",
+        "price_5ml":  "314",
+        "price_10ml":  "600",
         "image":  "images/GOOD GIRL BLUSH 80ML EDP.jpg"
     },
     {
@@ -336,9 +336,9 @@
         "name":  "TOMMY HILFIGER GIRL EDT",
         "category":  "Femeninos",
         "description":  "100 ml",
-        "price_full":  "1325",
-        "price_5ml":  "145",
-        "price_10ml":  "275",
+        "price_full":  "1620",
+        "price_5ml":  "155",
+        "price_10ml":  "295",
         "image":  "images/tommy-hilfiger-girl-uni.jpg"
     },
 	 {
@@ -355,7 +355,7 @@
         "category":  "Femeninos",
         "description":  "100 ml",
         "price_full":  "1450",
-        "price_5ml":  "1450",
+        "price_5ml":  "145",
         "price_10ml":  "275",
         "image":  "images/c8e339fd-7b47-45ab-b45f-6fca2bf0095e.jpg"
     },
@@ -391,8 +391,8 @@
         "category":  "Femeninos",
         "description":  "75 ml",
         "price_full":  "2795",
-        "price_5ml":  "235",
-        "price_10ml":  "455",
+        "price_5ml":  "255",
+        "price_10ml":  "495",
         "image":  "images/OLYMPEA W EDP 75ml.jpg"
     },
     {
@@ -426,7 +426,7 @@
         "name":  "PACO RABANNE ONE MILLON EDT",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "2989",
+        "price_full":  "2900",
         "price_5ml":  "",
         "price_10ml":  "",
         "image":  "images/PACO RABANNE 1 MILLON 100ML.jpg"
@@ -435,9 +435,9 @@
         "name":  "PACO RABANNE ONE MILLION PARFUM",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "3969",
-        "price_5ml":  "255",
-        "price_10ml":  "495",
+        "price_full":  "3895",
+        "price_5ml":  "270",
+        "price_10ml":  "525",
         "image":  "images/PACO RABANNE ONE MILLION PARFUM 100 ml..jpg"
     },
     {
@@ -535,8 +535,8 @@
         "category":  "Femeninos",
         "description":  "80 ml",
         "price_full":  "4515",
-        "price_5ml":  "325",
-        "price_10ml":  "635",
+        "price_5ml":  "365",
+        "price_10ml":  "715",
         "image":  "images/LA BOMBA C.HERRERA 80ML EDP.jpeg"
     },
     {
