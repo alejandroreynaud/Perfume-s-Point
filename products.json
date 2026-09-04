@@ -336,7 +336,7 @@
         "name":  "TOMMY HILFIGER GIRL EDT",
         "category":  "Femeninos",
         "description":  "100 ml",
-        "price_full":  "1620",
+        "price_full":  "1650",
         "price_5ml":  "155",
         "price_10ml":  "295",
         "image":  "images/tommy-hilfiger-girl-uni.jpg"
@@ -348,7 +348,7 @@
         "price_full":  "1695",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/tommy-hilfiger-girl-uni.jpg"
+        "image":  "images/TOMMY GIRL NOW 100ML W EDT - (PRÓXIMAMENTE).jpg"
     },
     {
         "name":  "COLD WATER WOMEN",
@@ -591,7 +591,7 @@
         "price_full":  "2985",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/SPICEBOMB DARK LEATHER 90ML.jpg"
+        "image":  "images/AZZARO WANTED PARFUM.jpg"
     },
     {
         "name":  "VERSACE MAN FRAICHE EDT",
@@ -648,14 +648,24 @@
         "image":  "images/EMPORIO ARMANI STRONGER WITH YOU PARFUM 100ML.jpg"
     },
     {
-        "name":  "",
+        "name":  "TOMMY NOW MEN EDT",
         "category":  "Masculinos",
         "description":  "100 ml",
-        "price_full":  "",
+        "price_full":  "1755",
         "price_5ml":  "",
         "price_10ml":  "",
-        "image":  "images/"
+        "image":  "images/TOMMY NOW 100ml M EDT.jpg"
+    },
+    {
+        "name":  "TOMMY IMPACT INTENSE",
+        "category":  "Masculinos",
+        "description":  "100 ml",
+        "price_full":  "1950",
+        "price_5ml":  "",
+        "price_10ml":  "",
+        "image":  "images/TOMMY IMPACT INTENSE 100ML - (PRÓXIMAMENTE).jpg"
     }
+
 
 ]
 

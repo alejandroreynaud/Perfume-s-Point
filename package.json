@@ -1,0 +1,11 @@
+{
+  "name": "perfumes-point-catalog",
+  "private": true,
+  "scripts": {
+    "build:pdf": "node scripts/create_decants_pdf.js"
+  },
+  "dependencies": {
+    "pdfkit": "^0.16.0",
+    "sharp": "^0.33.5"
+  }
+}
