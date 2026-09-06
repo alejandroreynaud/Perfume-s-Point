@@ -50,13 +50,31 @@ function renderProducts() {
     }
 
     visibleProducts.forEach(({ product, index }) => {
-
         const imgHtml = product.image
             ? `<button class="image-preview-btn" type="button" data-image="${product.image}" data-name="${product.name}"><img src="${product.image}" alt="Ver foto de ${product.name}" class="product-img"><span class="image-preview-label">Ver foto completa</span></button>`
             : '🧴';
-        const priceFull = product.price_full_num ?? formatPriceVal(product.price_full ?? product.price);
-        const price5 = product.price_5ml_num ?? formatPriceVal(product.price_5ml);
-        const price10 = product.price_10ml_num ?? formatPriceVal(product.price_10ml);
+
+        const priceFull = formatPriceVal(product.price_full ?? product.price);
+        const price5 = formatPriceVal(product.price_5ml);
+        const price10 = formatPriceVal(product.price_10ml);
+
+        const presentationOptions = [
+            { value: 'full', label: 'Sellado', price: priceFull },
+            ...(price5 > 0 ? [{ value: '5ml', label: '5 ml', price: price5 }] : []),
+            ...(price10 > 0 ? [{ value: '10ml', label: '10 ml', price: price10 }] : [])
+        ];
+
+        const availableLabels = presentationOptions
+            .filter(option => option.value !== 'full')
+            .map(option => option.label)
+            .join(' · ');
+
+        const selectOptions = presentationOptions
+            .map(option => {
+                const displayPrice = option.price > 0 ? formatPriceText(option.price) : '—';
+                return `<option value="${option.value}" data-price="${option.price}">${option.label} — ${displayPrice}</option>`;
+            })
+            .join('');
 
         const card = document.createElement('div');
         card.classList.add('product-card');
@@ -66,18 +84,17 @@ function renderProducts() {
                 <h3>${product.name}</h3>
                 <p>${product.description || ''}</p>
                 <div class="product-price">Presentaciones disponibles:</div>
-                <div class="presentations-labels">5 ml <span>·</span> 10 ml</div>
+                <div class="presentations-labels">${availableLabels || 'Sellado'}</div>
                 <div class="price-instruction">Precios 👇</div>
-                        <div class="presentation-actions">
-                            <select class="presentation-select" data-index="${index}">
-                                <option value="full" data-price="${priceFull}">Sellado — ${priceFull ? formatPriceText(priceFull) : '—'}</option>
-                                <option value="5ml" data-price="${price5}">5 ml — ${price5 ? formatPriceText(price5) : '—'}</option>
-                                <option value="10ml" data-price="${price10}">10 ml — ${price10 ? formatPriceText(price10) : '—'}</option>
-                            </select>
-                            <button class="button add-btn" data-index="${index}">AGREGAR</button>
-                        </div>
+                <div class="presentation-actions">
+                    <select class="presentation-select" data-index="${index}">
+                        ${selectOptions}
+                    </select>
+                    <button class="button add-btn" data-index="${index}">AGREGAR</button>
+                </div>
             </div>
         `;
+
         productsContainer.appendChild(card);
     });
 
