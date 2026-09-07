@@ -65,8 +65,8 @@ function renderProducts() {
         ];
 
         const availableLabels = presentationOptions
-            .filter(option => option.value !== 'full')
-            .map(option => option.label)
+            .filter(option => option.price > 0)
+            .map(option => option.value === 'full' ? 'Sellado' : option.label)
             .join(' · ');
 
         const presentationButtons = presentationOptions
