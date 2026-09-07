@@ -69,11 +69,14 @@ function renderProducts() {
             .map(option => option.label)
             .join(' · ');
 
-        const selectOptions = presentationOptions
-            .map(option => {
-                const displayPrice = option.price > 0 ? formatPriceText(option.price) : '—';
-                return `<option value="${option.value}" data-price="${option.price}">${option.label} — ${displayPrice}</option>`;
-            })
+        const presentationButtons = presentationOptions
+            .filter(option => option.price > 0)
+            .map(option => `
+                <button class="presentation-option-btn" type="button" aria-pressed="false" data-index="${index}" data-presentation="${option.value}" data-price="${option.price}">
+                    <span>${option.value === 'full' ? 'Bote sellado' : option.label}</span>
+                    <strong>${formatPriceText(option.price)}</strong>
+                </button>
+            `)
             .join('');
 
         const card = document.createElement('div');
@@ -87,10 +90,8 @@ function renderProducts() {
                 <div class="presentations-labels">${availableLabels || 'Sellado'}</div>
                 <div class="price-instruction">Precios 👇</div>
                 <div class="presentation-actions">
-                    <select class="presentation-select" data-index="${index}">
-                        ${selectOptions}
-                    </select>
-                    <button class="button add-btn" data-index="${index}">AGREGAR</button>
+                    ${presentationButtons}
+                    <button class="presentation-confirm-btn" type="button" data-index="${index}" disabled>ACEPTAR</button>
                 </div>
             </div>
         `;
@@ -195,27 +196,28 @@ productsContainer.addEventListener('click', (e) => {
         return;
     }
 
-    const btn = e.target.closest('.add-btn');
-    if (!btn) return;
-    const index = parseInt(btn.dataset.index, 10);
-    const select = document.querySelector(`.presentation-select[data-index="${index}"]`);
-    const opt = select.options[select.selectedIndex];
-    const presentation = opt.value;
-    const price = formatPriceVal(opt.dataset.price || opt.getAttribute('data-price'));
+    const btn = e.target.closest('.presentation-option-btn');
+    if (btn) {
+        const actions = btn.closest('.presentation-actions');
+        actions.querySelectorAll('.presentation-option-btn').forEach(optionButton => {
+            optionButton.classList.remove('selected');
+            optionButton.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('selected');
+        btn.setAttribute('aria-pressed', 'true');
+        actions.querySelector('.presentation-confirm-btn').disabled = false;
+        return;
+    }
+
+    const confirmBtn = e.target.closest('.presentation-confirm-btn');
+    if (!confirmBtn || confirmBtn.disabled) return;
+    const selectedBtn = confirmBtn.closest('.presentation-actions').querySelector('.presentation-option-btn.selected');
+    if (!selectedBtn) return;
+    const index = parseInt(selectedBtn.dataset.index, 10);
+    const presentation = selectedBtn.dataset.presentation;
+    const price = formatPriceVal(selectedBtn.dataset.price);
     if (!price) return alert('Precio no disponible para la presentación seleccionada.');
     addToCart(index, presentation, price);
-});
-
-productsContainer.addEventListener('change', (e) => {
-    const select = e.target.closest('.presentation-select');
-    if (!select) return;
-    const option = select.options[select.selectedIndex];
-    const price = formatPriceVal(option.dataset.price);
-    const priceLabel = select.closest('.product-info').querySelector('.selected-price');
-    const presentationName = option.value === 'full' ? 'sellado' : option.value;
-    priceLabel.textContent = price
-        ? `Precio ${presentationName}: ${formatPriceText(price)}`
-        : `Precio ${presentationName}: No disponible`;
 });
 
 // Vista ampliada de cada perfume sin salir de la página
