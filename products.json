@@ -13,26 +13,26 @@
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "3450",
-        "price_5ml":  "250",
-        "price_10ml":  "485",
+        "price_5ml":  "",
+        "price_10ml":  "",
         "image":  "images/b5b4f2ab-aba3-4096-b81b-b1ce1904785d.jpg"
     },
     {
-        "name":  "BAD BOY EXTREME",
+        "name":  "BAD BOY EXTREME EDP",
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "3450",
-        "price_5ml":  "250",
-        "price_10ml":  "485",
-        "image":  "images/perfume-carolina-herrera-bad-boy-extreme-edp-m-100-ml-1-prive-perfumes.webp"
+        "price_5ml":  "",
+        "price_10ml":  "",
+        "image":  "images/Bad boy extreme actualizado.jpg"
     },
     {
         "name":  "EMPORIO ARMANI STRONGER WITH YOU INTENSELY",
         "description":  "100 ml",
         "category":  "Masculinos",
         "price_full":  "3680",
-        "price_5ml":  "255",
-        "price_10ml":  "495",
+        "price_5ml":  "",
+        "price_10ml":  "",
         "image":  "images/a06a8b88-28db-4223-ae3f-1443ec83c21f.jpg"
     },
     {
