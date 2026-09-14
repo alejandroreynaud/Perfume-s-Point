@@ -32,13 +32,15 @@ function renderProducts() {
         .filter(({ product }) => {
             const matchesCategory = currentFilter === 'all' || product.category === currentFilter;
             const searchableText = `${product.name || ''} ${product.description || ''}`.toLowerCase();
+            const hasFull = formatPriceVal(product.price_full ?? product.price) > 0;
             const has5ml = formatPriceVal(product.price_5ml) > 0;
             const has10ml = formatPriceVal(product.price_10ml) > 0;
+            const hasPrice = hasFull || has5ml || has10ml;
             const hasDecant = decantFilter === 'all'
                 || (decantFilter === 'available' && (has5ml || has10ml))
                 || (decantFilter === '5ml' && has5ml)
                 || (decantFilter === '10ml' && has10ml);
-            return matchesCategory && searchableText.includes(searchTerm) && hasDecant;
+            return matchesCategory && searchableText.includes(searchTerm) && hasPrice && hasDecant;
         });
 
     if (priceSort !== 'default') {
